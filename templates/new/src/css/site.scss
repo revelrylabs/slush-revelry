@@ -1,0 +1,8 @@
+@import 'foundation';
+@import 'icons';
+@import 'CardLayout';
+@include foundation-everything(true);
+
+.tabs-panel.is-active {
+  display: block;
+}
