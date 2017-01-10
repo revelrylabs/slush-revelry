@@ -8,7 +8,7 @@ This is going to get fixed, but ya know, watch out for that.
 
 ## Install
 
-`npm install -g slush slush-revelry`
+`npm install -g slush revelrylabs/slush-revelry`
 
 ## Generators
 
