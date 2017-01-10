@@ -16,7 +16,7 @@
     "foundation-sites": "^6.2.4",
     "gulp": "^3.9.1",
     "object-assign": "^4.1.0",
-    "our-build-pipeline": "file:///Users/joel/src/our-build-pipeline",
+    "our-gulp": "revelrylabs/our-gulp",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-helmet": "^3.2.3",

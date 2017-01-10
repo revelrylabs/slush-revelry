@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-const createTasks = require('our-build-pipeline')
+const createTasks = require('our-gulp')
 
 const isProd = process.env.NODE_ENV === 'production'
 
