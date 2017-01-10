@@ -1,6 +1,7 @@
 import http from 'http'
 import express from 'express'
 import bodyParser from 'body-parser'
+import cors from 'cors'
 import {renderJson, renderHtml} from 'setup/renderServer'
 import router from 'setup/router'
 import renderServiceRouter from 'setup/renderServiceRouter'
@@ -9,6 +10,9 @@ import {PORT} from 'config/server'
 const app = express()
 
 // Express configuration and middlewares
+if(process.env.NODE_ENV !== 'production') {
+  app.use(cors())
+}
 app.use(express.static('dist/public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
