@@ -1,5 +1,5 @@
 {
-  "name": "revelry-harmonize",
+  "name": "my-app-name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,9 +20,9 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-helmet": "^3.2.3",
-    "react-redux-universal-render": "file:///Users/joel/src/react-redux-universal-render",
+    "react-redux-universal-render": "0.0.x",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
-    "revelry-components": "file:///Users/joel/src/revelry_core_node"
+    "revelry-components": "revelrylabs/revelry_core_node"
   }
 }
