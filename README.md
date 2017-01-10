@@ -42,6 +42,8 @@ Here's an overview of what you get out of the box:
   * Routes like `/jsonui/widgets/14` render the corresponding vars as JSON.
   * `POST /__RENDER__`: Send a JSON payload like `{"name": "widgets/show", "data": {"widget": {"id": 14}}}` to render HTML. (To use the server as a rendering service for another app.)  
 
+To run the server and watch for changes, use `npm run dev`.
+
 ## Contributing to the generator
 
 Make your edits to the code, and run `npm test` to create and start a generated test app on port 8000.
