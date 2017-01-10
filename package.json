@@ -4,9 +4,9 @@
   "description": "A generator for Revelry Node.js apps that use React, Redux, and more.",
   "main": "index.js",
   "scripts": {
-    "test:install": "npm install gulp slush . -g",
-    "test:new": "slush harmonize:new test",
-    "test:module": "(cd ./test; slush harmonize:module widgets)",
+    "test:install": "npm uninstall . -g; npm install gulp slush . -g",
+    "test:new": "slush revelry:new test",
+    "test:module": "(cd ./test; slush revelry:module widgets)",
     "test:start": "(cd ./test; npm install && npm run build && gulp dev)",
     "test:clean": "rm -rf ./test",
     "test": "npm run test:clean; npm run test:install && npm run test:new && npm run test:module && npm run test:start"
