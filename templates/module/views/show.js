@@ -3,7 +3,7 @@ import Button from 'revelry-components/lib/Button'
 import Layout from 'app/shared/components/Layout'
 import Callout from 'revelry-components/lib/Callout'
 
-export default function({<%= singularName %>, ...props}) {
+export default function Show({<%= singularName %>, ...props}) {
   const {id} = <%= singularName %>
   return (
     <Layout>

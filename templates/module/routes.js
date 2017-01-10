@@ -17,7 +17,12 @@ function findFake(id) {
 }
 function createFake(attrs={}) {
   const id = ++nextFakeId
-  const fake = fakesById[id] = {...attrs, id}
+  const name = `<%= singularName %> ${id}`
+  const fake = fakesById[id] = {
+    name,
+    ...attrs,
+    id,
+  }
   rebuildFakesArray()
   return fake
 }

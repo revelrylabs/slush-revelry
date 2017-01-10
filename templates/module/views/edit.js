@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from 'app/shared/components/Layout'
 import Form from '../components/Form'
 
-export default function({<%= singularName %>, ...props}) {
+export default function Edit({<%= singularName %>, ...props}) {
   const {id} = <%= singularName %>
   return (
     <Layout>
