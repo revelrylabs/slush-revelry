@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from '../ListItem'
+import Edit from '../edit'
 
 function createComponentWithValidProps() {
   const <%= singularName %> = {
@@ -7,12 +7,12 @@ function createComponentWithValidProps() {
     name: '<%= singularName %> 1',
   }
   return (
-    <ListItem <%= singularName %>={<%= singularName %>}>
-    </ListItem>
+    <Edit <%= singularName %>={<%= singularName %>}>
+    </Edit>
   )
 }
 
-describe('<%= pluralName %> component: ListItem', () => {
+describe('<%= pluralName %> view: edit', () => {
   it('can shallow render with valid props', () => {
     shallow(createComponentWithValidProps())
   })

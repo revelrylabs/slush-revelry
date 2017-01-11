@@ -12,7 +12,7 @@ function createComponentWithValidProps() {
   )
 }
 
-describe('Form', () => {
+describe('<%= pluralName %> component: Form', () => {
   it('can shallow render with valid props', () => {
     shallow(createComponentWithValidProps())
   })
