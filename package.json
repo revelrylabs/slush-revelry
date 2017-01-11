@@ -7,7 +7,7 @@
     "test:install": "npm uninstall . -g; npm install gulp slush . -g",
     "test:new": "slush revelry:new test",
     "test:module": "(cd ./test; slush revelry:module widgets)",
-    "test:start": "(cd ./test; npm install && npm run build && gulp dev)",
+    "test:start": "(cd ./test; npm install && npm run build && npm test && gulp dev)",
     "test:clean": "rm -rf ./test",
     "test": "npm run test:clean; npm run test:install && npm run test:new && npm run test:module && npm run test:start"
   },

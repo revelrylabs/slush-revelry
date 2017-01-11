@@ -1,0 +1,2 @@
+--require .mocha/setup
+--recursive src/**/__tests__/*.js

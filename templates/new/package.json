@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --opts .mocha/opts",
     "build": "gulp build",
     "dev": "gulp build && gulp dev"
   },
@@ -25,5 +25,13 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "revelry-components": "revelrylabs/revelry_core_node"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "enzyme": "^2.7.0",
+    "jsdom": "^9.9.1",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.4.2"
   }
 }
