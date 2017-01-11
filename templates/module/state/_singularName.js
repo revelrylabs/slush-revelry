@@ -1,3 +1,6 @@
-export default function(<%= singularName %>={}, {type, payload}) {
-  return <%= singularName %>
+export default function <%= singularName %>Reducer(state = {}, {type}) {
+  switch (type) {
+  default:
+    return state
+  }
 }

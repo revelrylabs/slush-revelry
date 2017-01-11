@@ -11,7 +11,7 @@ export function decrement() {
 }
 
 export default function(counter = 0, {type}) {
-  switch(type) {
+  switch (type) {
   case TYPE_INCREMENT:
     return counter + 1
   case TYPE_DECREMENT:

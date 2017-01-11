@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Layout from 'app/shared/components/Layout'
 import Form from '../components/Form'
+import shape from '../shape'
 
-export default function New({<%= singularName %>={}, ...props}) {
+export default function New({<%= singularName %>}) {
   return (
     <Layout>
       <h1>
@@ -15,4 +16,8 @@ export default function New({<%= singularName %>={}, ...props}) {
       />
     </Layout>
   )
+}
+
+New.propTypes = {
+  <%= singularName %>: PropTypes.shape(shape).isRequired,
 }

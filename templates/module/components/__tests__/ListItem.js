@@ -6,9 +6,9 @@ function createComponentWithValidProps() {
     id: 1,
     name: '<%= singularName %> 1',
   }
+
   return (
-    <ListItem <%= singularName %>={<%= singularName %>}>
-    </ListItem>
+    <ListItem <%= singularName %>={<%= singularName %>} />
   )
 }
 

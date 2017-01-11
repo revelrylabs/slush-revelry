@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Layout from 'app/shared/components/Layout'
 import Form from '../components/Form'
+import shape from '../shape'
 
-export default function Edit({<%= singularName %>, ...props}) {
+export default function Edit({<%= singularName %>}) {
   const {id} = <%= singularName %>
+
   return (
     <Layout>
       <h1>
@@ -16,4 +18,8 @@ export default function Edit({<%= singularName %>, ...props}) {
       />
     </Layout>
   )
+}
+
+Edit.propTypes = {
+  <%= singularName %>: PropTypes.shape(shape).isRequired,
 }

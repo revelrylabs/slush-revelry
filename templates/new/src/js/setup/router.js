@@ -5,6 +5,6 @@ const router = new Router()
 
 router.use('/', get('home'))
 
-names().forEach(name => router.use(`/${name}`, get(name)))
+names().forEach((name) => router.use(`/${name}`, get(name)))
 
 export default router

@@ -6,9 +6,9 @@ function createComponentWithValidProps() {
     {id: 1, name: '<%= singularName %> 1'},
     {id: 2, name: '<%= singularName %> 2'},
   ]
+
   return (
-    <Index <%= pluralName %>={<%= pluralName %>}>
-    </Index>
+    <Index <%= pluralName %>={<%= pluralName %>} />
   )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Helmet from 'react-helmet'
 import TopBar from './TopBar'
 import {Row, Col} from 'revelry-components/lib/grid'
@@ -24,6 +24,11 @@ function MainLayout({title, children}) {
       </Row>
     </div>
   )
+}
+
+MainLayout.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
 }
 
 export default connect(({data}) => ({title: data.title}))(MainLayout)

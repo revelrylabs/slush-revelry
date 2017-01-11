@@ -6,9 +6,9 @@ function createComponentWithValidProps() {
     id: 1,
     name: '<%= singularName %> 1',
   }
+
   return (
-    <Form <%= singularName %>={<%= singularName %>}>
-    </Form>
+    <Form <%= singularName %>={<%= singularName %>} />
   )
 }
 

@@ -3,7 +3,7 @@
 import objectAssign from 'object-assign'
 Object.assign = objectAssign
 
-import {createStore, combineReducers, applyMiddleware} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import setup from 'react-redux-universal-render'
 import {get as getView} from './autoload/views'
@@ -14,4 +14,5 @@ function createReduxStore(props) {
 }
 
 const createRenderer = setup({getView, createReduxStore})
+
 export default createRenderer

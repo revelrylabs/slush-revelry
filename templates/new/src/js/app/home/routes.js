@@ -1,7 +1,7 @@
 import {Router} from 'express'
 const router = new Router()
 
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
   res.render('home/index')
 })
 

@@ -6,7 +6,7 @@ import StateSpy from 'app/shared/components/StateSpy'
 import TestMount from 'app/shared/components/TestMount'
 import CounterIncrementButton from '../components/CounterIncrementButton'
 
-export default function ExamplesIndex() {
+export default function Index() {
   return (
     <Layout>
       <h1>Examples</h1>

@@ -2,6 +2,7 @@ import ReactDOMServer from 'react-dom/server'
 import createRenderer from './createRenderer'
 
 const render = createRenderer(ReactDOMServer)
+
 export default render
 
 export function renderJson(_req, res, next) {

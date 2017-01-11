@@ -4,6 +4,7 @@ const router = new Router()
 
 // THIS CODE SECTION IS FOR QUICK MOCKING
 // DELETE IT WHEN YOU HAVE REAL BACKING DATA
+/* eslint-disable */
 let nextFakeId = 0
 let fakes = []
 const fakesById = {}
@@ -40,52 +41,56 @@ function deleteFake(id) {
 for(let i = 0; i < 10; i++) {
   createFake()
 }
+/* eslint-enable */
 
 // index
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
   res.render('<%= pluralName %>/index', {
     <%= pluralName %>: fakes,
   })
 })
 
 // new
-router.get('/new', function(req, res) {
+router.get('/new', (req, res) => {
   const <%= singularName %> = req.body.<%= singularName %> || {}
+
   res.render('<%= pluralName %>/new', {
     <%= singularName %>,
   })
 })
 
 // show
-router.get('/:id', function(req, res) {
+router.get('/:id', (req, res) => {
   res.render('<%= pluralName %>/show', {
     <%= singularName %>: findFake(req.params.id),
   })
 })
 
 // edit
-router.get('/:id/edit', function(req, res) {
+router.get('/:id/edit', (req, res) => {
   res.render('<%= pluralName %>/edit', {
     <%= singularName %>: findFake(req.params.id),
   })
 })
 
 // create
-router.post('/', function(req, res) {
+router.post('/', (req, res) => {
   const attrs = req.body.<%= pluralName %> || {}
   const {id} = createFake(attrs)
+
   res.redirect(`/<%= pluralName %>/${id}`)
 })
 
 // update
-router.post('/:id', function(req, res) {
+router.post('/:id', (req, res) => {
   const attrs = req.body.<%= pluralName %> || {}
+
   updateFake(req.params.id, attrs)
   res.redirect(`/<%= pluralName %>/${req.params.id}`)
 })
 
 // delete
-router.delete('/:id', function(req, res) {
+router.delete('/:id', (req, res) => {
   deleteFake(req.params.id)
   res.redirect('/<%= pluralName %>')
 })

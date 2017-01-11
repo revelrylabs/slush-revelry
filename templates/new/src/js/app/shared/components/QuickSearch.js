@@ -3,7 +3,7 @@ import Button from 'revelry-components/lib/Button'
 import Icon from 'revelry-components/lib/Icon'
 import {Form, InputGroup, Input} from 'revelry-components/lib/forms'
 
-export default function QuickSearch(props) {
+export default function QuickSearch() {
   return (
     <Form>
       <InputGroup style={{margin: 0}}>

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Button from 'revelry-components/lib/Button'
 import Layout from 'app/shared/components/Layout'
 import Callout from 'revelry-components/lib/Callout'
+import shape from '../shape'
 
-export default function Show({<%= singularName %>, ...props}) {
+export default function Show({<%= singularName %>}) {
   const {id} = <%= singularName %>
+
   return (
     <Layout>
       <h1>
@@ -14,4 +16,8 @@ export default function Show({<%= singularName %>, ...props}) {
       <Button href={`/<%= pluralName %>/${id}/edit`}>Edit</Button>
     </Layout>
   )
+}
+
+Show.propTypes = {
+  <%= singularName %>: PropTypes.shape(shape).isRequired,
 }

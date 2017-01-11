@@ -5,12 +5,12 @@ import cors from 'cors'
 import {renderJson, renderHtml} from 'setup/renderServer'
 import router from 'setup/router'
 import renderServiceRouter from 'setup/renderServiceRouter'
-import {PORT} from 'config/server'
+import {NODE_ENV, PORT} from 'config/server'
 
 const app = express()
 
 // Express configuration and middlewares
-if(process.env.NODE_ENV !== 'production') {
+if (NODE_ENV !== 'production') {
   app.use(cors())
 }
 app.use(express.static('dist/public'))
@@ -28,4 +28,5 @@ app.use(router)
 
 // Turn it into an HTTP server
 http.createServer(app).listen(PORT)
+// eslint-disable-next-line no-console
 console.log(`Server is listening on ${PORT}`)
