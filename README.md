@@ -2,13 +2,9 @@
 
 A generator for Revelry Node.js apps that use React, Redux, and more.
 
-**WARNING:**
-Currently the generated app has a bunch of dependencies on Joel's local filesystem.
-This is going to get fixed, but ya know, watch out for that.
-
 ## Install
 
-`npm install -g slush slush-revelry`
+`npm install -g slush revelrylabs/slush-revelry`
 
 ## Generators
 
