@@ -1,21 +1,21 @@
 import React, {PropTypes} from 'react'
-import {Input} from 'revelry-components/lib/forms'
+import {Form, Input} from 'revelry-components/lib/forms'
 import Button from 'revelry-components/lib/Button'
 import shape from '../shape'
 
-export default function Form({<%= singularName %>, ...props}) {
+export default function <%= singularName %>Form({<%= singularName %>, ...props}) {
   return (
-    <form {...props}>
+    <Form {...props}>
       <Input.Stack
         label="name"
         name="<%= pluralName %>[name]"
         defaultValue={<%= singularName %>.name}
       />
       <Button>Save</Button>
-    </form>
+    </Form>
   )
 }
 
-Form.propTypes = {
+<%= singularName %>Form.propTypes = {
   <%= singularName %>: PropTypes.shape(shape).isRequired,
 }
