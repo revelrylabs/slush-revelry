@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Row, Col} from 'revelry-components/lib/grid'
 import Layout from 'app/shared/components/Layout'
 import {Form, Input, Button} from 'revelry-components/lib/forms'
 import {errorExtractor} from 'app/shared/util'
 import shape from '../shape'
 
-export default function Edit({user: {errors, reset_password_token}}) {
+export default function Edit({user: {errors, resetPasswordToken}}) {
   const errorFor = errorExtractor(errors)
 
   return (
@@ -31,7 +30,7 @@ export default function Edit({user: {errors, reset_password_token}}) {
           class="hidden"
           name="user[reset_password_token]"
           type="hidden"
-          value={reset_password_token}
+          value={resetPasswordToken}
         />
         <Button expanded type="submit">Submit</Button>
       </Form>

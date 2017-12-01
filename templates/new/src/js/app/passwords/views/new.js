@@ -1,5 +1,4 @@
 import React from 'react'
-import {Row, Col} from 'revelry-components/lib/grid'
 import Layout from 'app/shared/components/Layout'
 import {Form, Input, Button} from 'revelry-components/lib/forms'
 

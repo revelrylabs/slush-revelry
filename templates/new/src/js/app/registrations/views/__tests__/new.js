@@ -4,7 +4,7 @@ import New from '../new'
 const validRegistration = {
   email: 'user@example.com',
   password: 'password!1234',
-  password_confirmation: 'password!1234',
+  passwordConfirmation: 'password!1234',
 }
 
 function createComponentWithValidProps() {

@@ -4,7 +4,7 @@ import Edit from '../edit'
 function createComponentWithValidProps() {
   const user = {
     email: 'user@example.com',
-    'reset_password_token': '1234',
+    resetPasswordToken: '1234',
   }
 
   return (

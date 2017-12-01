@@ -4,7 +4,7 @@ import Form from '../Form'
 const validRegistration = {
   email: 'user@example.com',
   password: 'password!1234',
-  password_confirmation: 'password!1234',
+  passwordConfirmation: 'password!1234',
 }
 
 function createComponentWithValidProps() {
@@ -14,7 +14,7 @@ function createComponentWithValidProps() {
 }
 
 function createComponentWithErrors() {
-  const errors = {'password_confirmation': 'does not match'}
+  const errors = {passwordConfirmation: 'does not match'}
 
   return (
     <Form registration={{...validRegistration, errors}} />
