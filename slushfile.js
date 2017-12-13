@@ -13,6 +13,15 @@ const TEMPLATE_OPTS = {
   interpolate: /<%=([\s\S]+?)%>/g,
 }
 
+gulp.task('readme', function() {
+  const SRC_GLOB = __dirname + '/templates/README.md'
+  const DEST_PATH = './'
+
+  gulp.src(SRC_GLOB, {dot: true})
+    .pipe(conflict(DEST_PATH))
+    .pipe(gulp.dest(DEST_PATH))
+})
+
 gulp.task('new', function() {
   const [name] = gulp.args
 
