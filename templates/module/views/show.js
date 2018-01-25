@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
-import Button from 'revelry-components/lib/Button'
+import Button from 'possum/lib/Button'
 import Layout from 'app/shared/components/Layout'
-import Callout from 'revelry-components/lib/Callout'
+import Callout from 'possum/lib/Callout'
 import shape from '../shape'
 
 export default function Show({<%= singularName %>}) {

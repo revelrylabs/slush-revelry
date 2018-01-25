@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react'
-import Button from 'revelry-components/lib/Button'
+import Button from 'possum/lib/Button'
 import {connect} from 'react-redux'
 import {increment} from '../state/counter'
 

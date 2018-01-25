@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-const createTasks = require('our-gulp')
+const createTasks = require('@revelry/our-gulp')
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -14,6 +14,6 @@ createTasks(gulp, {
   sassIncludePaths: [
     'src/css',
     'node_modules/foundation-sites/scss',
-    'node_modules/revelry-components/scss',
+    'node_modules/possum/scss',
   ]
 })

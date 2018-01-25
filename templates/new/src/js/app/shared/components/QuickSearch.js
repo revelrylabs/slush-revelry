@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from 'revelry-components/lib/Button'
-import Icon from 'revelry-components/lib/Icon'
-import {Form, InputGroup, Input} from 'revelry-components/lib/forms'
+import Button from 'possum/lib/Button'
+import Icon from 'possum/lib/Icon'
+import {Form, InputGroup, Input} from 'possum/lib/forms'
 
 export default function QuickSearch() {
   return (

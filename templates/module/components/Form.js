@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react'
-import {Form, Input} from 'revelry-components/lib/forms'
-import Button from 'revelry-components/lib/Button'
+import {Form, Input} from 'possum/lib/forms'
+import Button from 'possum/lib/Button'
 import shape from '../shape'
 
 export default function <%= singularName %>Form({<%= singularName %>, ...props}) {

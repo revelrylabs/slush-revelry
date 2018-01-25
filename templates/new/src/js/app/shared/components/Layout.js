@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
 import Helmet from 'react-helmet'
 import TopBar from './TopBar'
-import {Row, Col} from 'revelry-components/lib/grid'
+import {Row, Col} from 'possum/lib/grid'
 import {connect} from 'react-redux'
 import AuthenticityTokenProvider from './AuthenticityTokenProvider'
 

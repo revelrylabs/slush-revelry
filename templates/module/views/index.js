@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react'
-import Button from 'revelry-components/lib/Button'
+import Button from 'possum/lib/Button'
 import Layout from 'app/shared/components/Layout'
 import ListItem from '../components/ListItem'
 import shape from '../shape'

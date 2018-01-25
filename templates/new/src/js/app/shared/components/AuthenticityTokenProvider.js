@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import AuthenticityTokenProvider from 'revelry-components/lib/AuthenticityTokenProvider'
+import AuthenticityTokenProvider from 'possum/lib/AuthenticityTokenProvider'
 
 const mapStateToProps = ({data: {authenticityToken}}) => authenticityToken
 
