@@ -1,6 +1,6 @@
 {
   "name": "slush-revelry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A generator for Revelry Node.js apps that use React, Redux, and more.",
   "main": "index.js",
   "scripts": {
